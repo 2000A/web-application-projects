@@ -20,7 +20,7 @@ function updateClock(){
     minutesEl.innerText = m;
     secondsEl.innerText = s;
     ampmEl.innerText = ampm;
-    setTimeout(()=>{
+    setTimeout(()=>{   //setTimeout will call updateClock() methods after every 1sec;
         updateClock();
     }, 1000);
 }
